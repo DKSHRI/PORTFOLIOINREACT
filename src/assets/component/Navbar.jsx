@@ -21,7 +21,7 @@ const navLinks = [
   { to: "/Leetcode-Live", label: "LeetCode", effect: "translate-x-full" },
   { to: "/contact", label: "Contact", effect: "translate-x-full translate-y-full" },
   {
-    to: "https://drive.google.com/file/d/1fwVyTGW2JYmcmoSpfpIFVgWPzJ4qhQOE/view?usp=sharing",
+    to: "https://drive.google.com/drive/folders/10uyeUNq-j4slcN7j3aVKVVXJ9oepWnB4?usp=drive_link",
     label: "Resume",
     external: true,
     blink: true
