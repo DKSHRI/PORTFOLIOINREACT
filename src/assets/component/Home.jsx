@@ -52,7 +52,7 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center sm:justify-start gap-3 pt-3">
-            <ButtonLink to="/project">View my work</ButtonLink>
+            <ButtonLink to="/projects">View my work</ButtonLink>
             <ButtonLink to="/contact">Contact Me</ButtonLink>
           </div>
         </div>

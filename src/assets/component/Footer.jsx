@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-xl font-semibold mb-2">Devanshu Shrivastava</h3>
             <p className="text-gray-500 text-sm">
-              © 2024 • Built with{" "}
+              © 2025 • Built with{" "}
               <Heart className="inline h-4 w-4 text-red-500 mx-1" /> using React & Tailwind CSS
             </p>
           </div>

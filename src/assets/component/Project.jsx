@@ -9,8 +9,8 @@ const Project = () => {
       description:
         "A React-based web application that lets users browse trending movies, add them to a watchlist, and manage it efficiently. Features responsive design and real-time data from TMDb API.",
       technologies: ["React.js", "React Router", "Tailwind CSS", "TMDb API"],
-      github: "#",
-      live: "#",
+       github: "https://github.com/DKSHRI/filmy.com",
+      live: "https://dkshri.github.io/filmy.com/",
     },
     {
       title: "Interactive Calculator",
@@ -25,8 +25,8 @@ const Project = () => {
       description:
         "Modern portfolio website showcasing projects and skills with beautiful animations, dark theme, and responsive design. Built with React and Tailwind CSS.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/DKSHRI/PORTFOLIOINREACT",
+      live: "https://dkshri.github.io/PORTFOLIOINREACT/",
     },
   ];
 
