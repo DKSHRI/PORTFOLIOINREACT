@@ -39,7 +39,7 @@ const Navbar = () => {
   const currentTitle = useRotatingTitles(titles, 5000);
 
   return (
-    <div className="px-6 py-4 flex flex-wrap md:flex-nowrap justify-between items-center top-0 left-0 w-full">
+    <div className="sm:px-6 py-4 flex flex-row flex-wrap md:flex-nowrap justify-between items-center top-0 left-0 w-full">
       {/* Blinking animation */}
       <style>{`
         @keyframes blink {
