@@ -156,7 +156,7 @@ const Leetcode = () => {
           href="https://leetcode.com/u/DEVANSH_CAN_CODE/"
           className="text-xl font-bold text-white"
         >
-          DEVANSH_CAN_CODE
+        Leetcode (DEVANSH_CAN_CODE) 🎯
         </a>
       </header>
 
