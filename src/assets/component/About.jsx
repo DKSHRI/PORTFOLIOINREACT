@@ -124,7 +124,7 @@ const InfoCard = ({ title, subtitle, description, photos }) => {
               src={photo}
               alt={`${title}-${idx}`}
               onClick={() => setPopupIndex(idx)} // ✅ open at clicked index
-              className={`absolute w-32 h-24 object-cover rounded-lg border cursor-pointer transition-opacity duration-700 transform transition-transform duration-500 ${
+              className={`absolute w-32 h-24 object-cover rounded-lg border cursor-pointer transition-opacity duration-700 transform ${
                 idx === current ? "opacity-100 hover:scale-110" : "opacity-0"
               }`}
             />
