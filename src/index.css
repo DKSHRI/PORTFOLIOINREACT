@@ -5,12 +5,7 @@
 
 
 /* OR make a class */
-.edu-cursive {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .para-about {
   font-family: "Source Code Pro", "Dancing Script", system-ui, sans-serif; 
   font-optical-sizing: auto;

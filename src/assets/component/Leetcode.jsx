@@ -48,23 +48,23 @@ const Leetcode = () => {
       ]
     : [];
 
-  // 🔹 Observe when section comes into view
+  // Observe when section comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
           fetchUserDetails();
-          observer.disconnect(); // ✅ only run once
+          observer.disconnect(); // only run once
         }
       },
-      { threshold: 0.5 } // trigger at 50% visibility
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
-  // 🔹 Animate when stats are loaded
+  // Animate when stats are loaded
   useEffect(() => {
     if (stats) {
       // Animate progress sections
@@ -148,24 +148,24 @@ const Leetcode = () => {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen bg-white text-black flex flex-col"
+      className="min-h-screen bg-black text-green-400 flex flex-col font-mono"
     >
       {/* Navbar */}
-      <header className="flex justify-center items-center p-4 bg-black shadow-md">
+      <header className="flex justify-center items-center p-4 bg-black border-b border-green-500 shadow-md">
         <a
           href="https://leetcode.com/u/DEVANSH_CAN_CODE/"
-          className="text-xl font-bold text-white"
+          className="text-xl font-bold text-green-400 tracking-wider"
         >
-        Leetcode (DEVANSH_CAN_CODE) 🎯
+          Leetcode (DEVANSH_CAN_CODE) 🎯
         </a>
       </header>
 
       {/* Error */}
-      {error && <p className="text-center text-red-600 mt-4">{error}</p>}
+      {error && <p className="text-center text-red-500 mt-4">{error}</p>}
 
       {/* Loader */}
       {loading && (
-        <p className="text-center mt-10 text-gray-600 animate-pulse">
+        <p className="text-center mt-10 text-green-300 animate-pulse">
           Loading profile...
         </p>
       )}
@@ -187,12 +187,12 @@ const Leetcode = () => {
               <div
                 key={idx}
                 ref={(el) => (progressRefs.current[idx] = el)}
-                className="flex flex-col items-center bg-black p-6 rounded-2xl shadow-lg transform transition duration-300 hover:scale-105"
+                className="flex flex-col items-center bg-black border border-green-500 p-6 rounded-xl shadow-lg transform transition duration-300 hover:scale-105"
               >
                 <div className="relative w-28 h-28">
                   <svg className="absolute inset-0" viewBox="0 0 36 36">
                     <path
-                      className="text-gray-700"
+                      className="text-green-900"
                       stroke="currentColor"
                       strokeWidth="4"
                       fill="none"
@@ -202,7 +202,7 @@ const Leetcode = () => {
                     />
                     <path
                       ref={(el) => (progressPathRefs.current[idx] = el)}
-                      className="text-yellow-400"
+                      className="text-green-400"
                       strokeLinecap="round"
                       stroke="currentColor"
                       strokeWidth="4"
@@ -214,15 +214,15 @@ const Leetcode = () => {
                   </svg>
                   <span
                     ref={(el) => (progressValueRefs.current[idx] = el)}
-                    className="absolute inset-0 flex items-center justify-center font-bold text-lg text-white"
+                    className="absolute inset-0 flex items-center justify-center font-bold text-lg text-green-400"
                   >
                     0%
                   </span>
                 </div>
-                <p className="mt-4 text-lg font-semibold text-white">
+                <p className="mt-4 text-lg font-semibold text-green-300">
                   {item.label}
                 </p>
-                <span className="text-gray-400">{item.value} solved</span>
+                <span className="text-green-600">{item.value} solved</span>
               </div>
             ))}
           </div>
@@ -233,15 +233,28 @@ const Leetcode = () => {
               <div
                 key={i}
                 ref={(el) => (cardRefs.current[i] = el)}
-                className="bg-black p-4 rounded-2xl shadow-lg text-center transform transition duration-300 hover:scale-105 opacity-0"
+                className="bg-black border border-green-500 rounded-lg shadow-lg p-4 text-center font-mono text-green-400 transform transition duration-300 hover:scale-105 opacity-0"
               >
-                <h3 className="text-gray-400 text-sm">{c.label}</h3>
+                {/* Terminal-style header */}
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-green-300">
+                    ┌─ {c.label} ─┐
+                  </span>
+                  <span className="text-xs text-green-300">● ● ●</span>
+                </div>
+
+                {/* Value */}
                 <p
                   ref={(el) => (cardValueRefs.current[i] = el)}
-                  className="text-2xl font-bold text-yellow-400"
+                  className="text-2xl font-bold text-green-400 tracking-wider"
                 >
                   0
                 </p>
+
+                {/* Bottom line */}
+                <div className="mt-2 text-xs text-green-300">
+                  └───────────────┘
+                </div>
               </div>
             ))}
           </div>

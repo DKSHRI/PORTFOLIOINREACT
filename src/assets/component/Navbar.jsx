@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Logo / Title */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="edu-cursive text-lg sm:text-xl md:text-2xl font-bold">
+        <h1 className=" text-lg sm:text-xl md:text-2xl font-bold">
           {currentTitle}
         </h1>
       </div>
