@@ -45,7 +45,7 @@ const Home = () => {
   useEffect(() => {
     let i = 0;
     let j = 0;
-    const typingSpeed = 10; // ms per char
+    const typingSpeed = 15; // ms per char
     const stepDelay = 400; // ms between lines
 
     function typeLine() {
@@ -80,7 +80,7 @@ const Home = () => {
           <img
             src={dp}
             alt="Devanshu Shrivastava"
-            className="w-40 sm:w-2/3 max-w-[280px] sm:max-w-sm md:max-w-md h-auto object-contain rounded-full shadow-md"
+            className="w-40 sm:w-2/3 max-w-[280px] sm:max-w-sm md:max-w-md h-auto object-contain  "
             loading="lazy"
           />
         </div>

@@ -51,7 +51,7 @@ const skillCategories = {
     "OSI Model",
     "Routing",
     "NAT",
-    "Linux (Ubuntu)",
+    "Linux ",
   ],
   "Tools & Platforms": ["Git", "GitHub", "Vercel", "Windows"],
   Concepts: [
