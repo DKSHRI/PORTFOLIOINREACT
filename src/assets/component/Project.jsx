@@ -200,7 +200,7 @@ const Project = () => {
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center px-3 py-2 border border-border rounded-lg transition hover:bg-primary hover:text-black"
+                  className="flex-1 flex items-center justify-center px-3 py-2 border border-border rounded-lg transition hover:bg-primary hover:text-white  hover:border-primary"
                 >
                   <Github className="h-4 w-4 mr-2" /> Code
                 </a>
@@ -208,7 +208,7 @@ const Project = () => {
                   href={repo.deployment_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center px-3 py-2 border border-border rounded-lg transition hover:bg-primary hover:text-black"
+                  className="flex-1 flex items-center justify-center px-3 py-2 border border-border rounded-lg transition hover:bg-primary hover:text-white  hover:border-primary"
                 >
                   <ExternalLink className="h-4 w-4 mr-2" /> Live
                 </a>
